@@ -1,0 +1,29 @@
+//practice 
+
+// Input: "My credit card number is 1234 5678 8765 4321."
+// Output: "My credit card number is **** **** **** ****."
+
+// Create function takes string as parameter
+// let newVar = ""
+// create array with numbers from 0-9 
+// loop through each char in string and check if char is a number, if number replace with newVar
+// Return new string with replaced characters
+
+function censor(str){
+  const digits = "0123456789";
+  let newVar = "";
+
+  for (let i=0; i < str.length; i++){
+    let char = str[i]
+    //console.log(char)
+    if (digits.includes(char)){
+      newVar += str[i].replace(str[i], "*")
+    } else {
+      newVar += str[i]
+    }
+  }
+
+  return newVar
+}
+
+console.log(censor("My credit card number is 1234 5678 8765 4321."))
