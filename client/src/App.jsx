@@ -1,22 +1,25 @@
 import { useState } from 'react'
 import './App.css'
+import AnimalComponent from './components/AnimalComponent'
 
 function App() {
   const [count, setCount] = useState(0)
 
-  //call things from BE server.js here
-  //const things = async fetch 
-
-
   return (
-    <>
+    
       <div>
-        <button onClick={() => setCount((count) => count + 1)}>
+        <div>
+          <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
-        </button>
+          </button>
+        </div>
+    
+    <div>
+      <AnimalComponent />
     </div>
+      </div>
 
-    </>
+
   )
 }
 
