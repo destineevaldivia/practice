@@ -6,6 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 8081;
 
 const _dirname = path.resolve();
+
+//app.use is how you load your middleware fxn into express so that it knows to use it
 app.use(cors());
 
 
