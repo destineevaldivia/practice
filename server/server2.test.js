@@ -20,6 +20,7 @@ describe ("testing the clothingsRec function ", () => {
 
 
 describe ("testing vanilla js", () => {
+    
     test("sum of two plus two", () => {
         expect(2+2).toBe(4)
     })
@@ -29,6 +30,18 @@ describe ("testing vanilla js", () => {
             return a + b;
         }
         expect(sum(1,2)).toBe(3);
-        
+    })
+
+    test("testing two objects", () => {
+        const demo = {};
+        expect(demo).toEqual({});
+
     })
 })
+
+/* 
+HOMEWORK:
+ Write a function getTotalFamilyMembers(person) that returns the total count of family members 
+ (including the person, their spouse, and children).
+*/
+
